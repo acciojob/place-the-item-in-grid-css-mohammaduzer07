@@ -1,2 +1,39 @@
 
 /* Your CSS Code here. */
+.holder{
+	display: grid;
+	width: 200px;
+	/* grid-template-rows: repeat(2, 100px);
+	grid-template-columns: repeat(2, 100px); */
+	/* OR */
+	grid-template-areas: 'item-1 item-1'
+							'item-2 item-2'
+							'item-3 item-3' 
+							'item-4 item-4'; 
+}
+.item{
+	width: 200px;
+	height: 200px
+}
+.item-1{
+	background: black;
+	/* grid-row: 1/50;
+	grid-column:1/50; */
+}
+.item-2{
+	background: green;
+	/* grid-row: 50/100;
+	grid-column:50/100; */
+	
+}
+.item-3{
+	background: darkblue;
+	/* grid-row: 100/150;
+	grid-column:100/150; */
+	
+}
+.item-4{
+	background: saddlebrown;
+	/* grid-row: 150/200;
+	grid-column:150/200; */
+}
